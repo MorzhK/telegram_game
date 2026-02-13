@@ -2,7 +2,6 @@ import 'dotenv/config';
 import TelegramApi from 'node-telegram-bot-api';
 import {options} from './options.js'
 const token = process.env.BOT_TOKEN;
-console.log('TOKEN:', process.env.BOT_TOKEN);
 const bot = new TelegramApi(token, {
     polling: {
         autoStart: true,
