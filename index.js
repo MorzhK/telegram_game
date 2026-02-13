@@ -1,6 +1,6 @@
 import TelegramApi from 'node-telegram-bot-api';
 import {options} from './options.js'
-const token = '8461486817:AAF49x7wZHGS5lSGl_XCmR9-4IlIU_TNu84';
+const token = process.env.BOT_TOKEN;
 
 const bot = new TelegramApi(token, {
     polling: {
